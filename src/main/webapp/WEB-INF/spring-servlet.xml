@@ -27,7 +27,16 @@ id="messageSource">
 <property name="basename" value="messages" />
 </bean>
 
-<bean id="userRepo" class="com.spring.repository.UserRepository"></bean>
+<bean id="teacherRepo" class="com.spring.repository.TeacherRepository"></bean>
+<bean id="studentRepo" class="com.spring.repository.StudentRepository"></bean>
+<bean id="courseRepo" class="com.spring.repository.CourseRepository"></bean>
+<bean id="adminRepo" class="com.spring.repository.AdminRepository"></bean>
+<bean id="materialRepo" class="com.spring.repository.MaterialRepository"></bean>
+
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<property name="maxUploadSize" value="1000000" />
+</bean>
+
 
 
 </beans>
