@@ -30,7 +30,7 @@ public class AdminController {
 	
 	@Autowired
 	CourseRepository courseRepo;
-	
+	  
 	@GetMapping("/dashboard")
 	public String adminDashboard(HttpSession session , Model model) {
 		Admin admin = (Admin) session.getAttribute("admin");
